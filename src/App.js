@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
 import './App.css';
-import Button from '@material-ui/core/Button';
+import Theme from "./Theme";
+import Header from "./components/Header";
 
-const App = () => (
-    <Button variant="contained" color="primary">
-        Hello World
-    </Button>
-);
+const App = () => {
+    return (
+        <Theme>
+            <Header />
+        </Theme>
+    )
+};
 
 export default App;
